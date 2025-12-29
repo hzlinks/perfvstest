@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:${user.home}/perf.db
+    username:
+    password:
+  sql:
+    init:
+      mode:  never
+      schema-locations: classpath:schema_sqlite.sql

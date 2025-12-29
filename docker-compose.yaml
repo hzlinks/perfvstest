@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  spring:
+    image: perfvs/sdemo:1.0.1
+    ports:
+      - "21080:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+  vertx:
+    image: perfvs/vxtdemo:1.0.1
+    ports:
+      - "21081:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+  quarkus:
+    image: perfvs/qkemo:1.0.1
+    ports:
+      - "21082:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+  quarkus-native:
+    image: perfvs/qkemo-native:1.0.1
+    ports:
+      - "21083:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+  ginweb:
+    image: perfvs/gindemo:1.0.1
+    ports:
+      - "21084:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+  beego:
+    image: perfvs/beedemo:1.0.1
+    ports:
+      - "21085:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
