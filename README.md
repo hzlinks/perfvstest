@@ -2,7 +2,7 @@
 
 ## preface
 
-验证网络上的技术栈
+验证go、java语言技术栈各框架在crud环境下的性能差异
 
 
 ## code structure
@@ -21,9 +21,5 @@ sqlite
 
 docker-compose --compatibility up -d
 
-
-## doc 
-
-http://secret.hzlinks.net/x/BwD6AQ
 
 ## result
